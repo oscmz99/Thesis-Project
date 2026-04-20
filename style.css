@@ -119,7 +119,6 @@ main {
 .top {
     background-color: rgb(19, 19, 139);
     color: white;
-    position: fixed;
     top: 0;
     padding: 15px 20px;
     text-decoration: none;
