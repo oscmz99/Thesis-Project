@@ -118,10 +118,17 @@ main {
 }
 .top {
     background-color: rgb(19, 19, 139);
+    color: white;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    padding: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+}
+.top:hover{
+    color: bisque;
+    background-color: orangered;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
 }
 @media (max-width: 768px) {
     main {
