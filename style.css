@@ -12,7 +12,7 @@ blockquote {
     padding-left: 20px;
     margin: 40px 0;
     font-style: italic;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 0 8px 8px 0;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.05);
     border-radius: 0 8px 8px 0;
@@ -61,7 +61,7 @@ ul li a:hover {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
 }
 .RenoImage {
   display: flex;
@@ -115,4 +115,37 @@ main {
 .Audio:hover, img:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease;
+}
+@media (max-width: 768px) {
+    /* 1. Shrink the main container padding so text doesn't get squeezed */
+    main {
+        padding: 25px; /* Down from 60px */
+        margin: 10px;
+    }
+
+    /* 2. Stack the Navigation Bar buttons vertically */
+    ul {
+        flex-direction: column; 
+        gap: 8px;
+    }
+
+    ul li a {
+        display: block; /* Makes buttons full-width */
+        text-align: center;
+    }
+
+    /* 3. Stack the Reno Image row so they aren't tiny side-by-side */
+    .RenoImage {
+        flex-direction: column;
+    }
+
+    .RenoImage img {
+        width: 100%; /* Full width on mobile */
+    }
+
+    /* 4. Adjust the Audio box for small screens */
+    .Audio {
+        width: 100%;
+        padding: 15px;
+    }
 }
