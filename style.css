@@ -32,12 +32,13 @@ ul {
     padding: 0;
     justify-content: center;
     padding: 10px 0;
-    gap: 15px;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 ul li{
     display: block;
     color: orangered;
-    padding: 14px 20px;
+    padding: 0;
 }
 ul li a {
     text-decoration: none;
@@ -45,8 +46,9 @@ ul li a {
     font-weight: bold;
     transition: color 0.3s;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
 }
 ul li a:hover {
     color: bisque;
