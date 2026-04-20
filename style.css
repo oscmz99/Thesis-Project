@@ -58,3 +58,13 @@ section#problem p:first-of-type::first-letter {
     color: rgb(19, 19, 139);
     font-weight: bold;
 }
+.RenoImage {
+  display: flex;
+  gap: 10px;
+}
+
+.image-row img {
+  width: 50%;
+  height: auto;
+}
+
