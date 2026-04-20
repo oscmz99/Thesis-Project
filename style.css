@@ -116,6 +116,13 @@ main {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease;
 }
+.top {
+    background-color: rgb(19, 19, 139);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+}
 @media (max-width: 768px) {
     main {
         padding: 25px;
