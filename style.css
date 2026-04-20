@@ -117,33 +117,31 @@ main {
     transition: box-shadow 0.3s ease;
 }
 @media (max-width: 768px) {
-    /* 1. Shrink the main container padding so text doesn't get squeezed */
     main {
-        padding: 25px; /* Down from 60px */
+        padding: 25px;
         margin: 10px;
     }
-
-    /* 2. Stack the Navigation Bar buttons vertically */
     ul {
         flex-direction: column; 
         gap: 8px;
+        padding: 10px 20px;
+    }
+    ul li {
+        width: 100%;
+        padding: 0;
     }
 
     ul li a {
-        display: block; /* Makes buttons full-width */
+        display: block;
         text-align: center;
+        padding: 0px;
     }
-
-    /* 3. Stack the Reno Image row so they aren't tiny side-by-side */
     .RenoImage {
         flex-direction: column;
     }
-
     .RenoImage img {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
     }
-
-    /* 4. Adjust the Audio box for small screens */
     .Audio {
         width: 100%;
         padding: 15px;
