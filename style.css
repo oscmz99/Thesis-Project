@@ -131,6 +131,10 @@ main {
     background-color: orangered;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+figcaption{
+    font-style: italic;
+    font-size: 12px;
+}
 @media (max-width: 768px) {
     main {
         padding: 25px;
