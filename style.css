@@ -13,6 +13,9 @@ p {
     color: #333;
     margin-bottom: 1.5rem;
 }
+a {
+   text-decoration: none;
+}
 a:hover{
     color: orangered;
 }
